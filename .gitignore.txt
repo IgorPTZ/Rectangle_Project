@@ -1,0 +1,8 @@
+.vs
+Debug
+DeitelComoProgramarC++Cap9Pag409Ex9.12.sln
+DeitelComoProgramarC++Cap9Pag409Ex9.12.vcxproj
+DeitelComoProgramarC++Cap9Pag409Ex9.12.vcxproj.filters
+DeitelComoProgramarC++Cap9Pag409Ex9.12.vcxproj.user
+stdafx.cpp
+stdafx.h
