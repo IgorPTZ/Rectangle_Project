@@ -6,8 +6,6 @@ using std::endl;
 #include "Rectangle.h"
 #include <locale.h>
 
-
-
 Rectangle::Rectangle(const vector<double> &A, const vector<double> &B, const vector<double> &C, const vector<double> &D)
 {
 	setlocale(LC_ALL, "");
@@ -17,12 +15,12 @@ Rectangle::Rectangle(const vector<double> &A, const vector<double> &B, const vec
 			calculateLength(C,D);
 		}
 		else {
-			cout << "As coordenadas apresentadas estão fora do primeiro quadrante e/ou não representam um retângulo" << endl;
+			cout << "As coordenadas apresentadas estÃ£o fora do primeiro quadrante e/ou nÃ£o representam um retÃ¢ngulo" << endl;
 			exit(0);
 		}
 	}
 	else {
-		cout << "As coordenadas passadas não estão corretas!" << endl;
+		cout << "As coordenadas passadas nÃ£o estÃ£o corretas!" << endl;
 		exit(0);
 	}
 }
@@ -168,15 +166,15 @@ const vector<double>& Rectangle::getVertexD()
 
 void Rectangle::showInformations()
 {	
-	cout << "Informações do retângulo:\n" << endl;
+	cout << "InformaÃ§Ãµes do retÃ¢ngulo:\n" << endl;
 	cout << "Altura:    " << getWidth() << endl;
 	cout << "Largura:   " << getLength() << endl;
-	cout << "Área:      " << calculateArea() << endl;
-	cout << "Perímetro: " << calculatePerimeter() << endl;
+	cout << "Ãrea:      " << calculateArea() << endl;
+	cout << "PerÃ­metro: " << calculatePerimeter() << endl;
 	if (isSquare()) {
-		cout << "Esse retangulo também é um quadrado" << endl;
+		cout << "Esse retangulo tambÃ©m Ã© um quadrado" << endl;
 	}
 	else {
-		cout << "Esse retângulo não é um quadrado" << endl;
+		cout << "Esse retÃ¢ngulo nÃ£o Ã© um quadrado" << endl;
 	}
 }
